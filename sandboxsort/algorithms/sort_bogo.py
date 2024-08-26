@@ -1,12 +1,13 @@
 import random
 
 
-def calculate(inputData: list = None) -> list:
-    """Calculate
+def sort(inputData: list = None) -> list:
+    """Calculate Bogo Sort
 
     Parameters
     ----------
-    na : None
+    inputData : list
+        The unsorted list
 
     Returns
     -------
@@ -35,6 +36,7 @@ def calculate(inputData: list = None) -> list:
             random.shuffle(random_array)
         return random_array
 
+    print('Bogo Sort')
     print(f'Unsorted list: {inputData}')
     sortedData = bogo_sort(inputData)
     print(f'Sorted array: {sortedData}')
@@ -42,5 +44,5 @@ def calculate(inputData: list = None) -> list:
 
 
 if __name__ == "__main__":
-    print('Calculating Solutions...')
-    calculate()
+    print('Direct Call')
+    sort()

@@ -1,6 +1,6 @@
 import unittest
 
-from sandboxsort.algorithms.sort_bogo import calculate
+from sandboxsort.algorithms.sort_bogo import sort
 
 
 class TestSum(unittest.TestCase):
@@ -10,5 +10,5 @@ class TestSum(unittest.TestCase):
         Compare test input to provided true answer
         """
         testData = [5, 2, 1]
-        result = calculate(testData)
+        result = sort(testData)
         self.assertEqual(result, [1, 2, 5])
